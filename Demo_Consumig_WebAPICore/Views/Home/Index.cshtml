@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Demo_Consumig_WebAPICore.Models.Customer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contactno)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contactno)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.CustomerId.ToString() }) |
+                @Html.ActionLink("Details", "GetCustomerById", new {  id=item.CustomerId  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.CustomerId  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

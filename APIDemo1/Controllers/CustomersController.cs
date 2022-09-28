@@ -22,13 +22,19 @@ namespace APIDemo1.Controllers
         {
             return _context.Customers.ToList();
         }
-    
-    [HttpPost]
-    public Customer AddNewCustomer(Customer customer)
-    {  _context.Customers.Add(customer);
-       _context.SaveChanges();
-        return customer;
-    }
+        [HttpGet("{id}")]
+        public Customer GetCustomers(int id)
+        {
+            Customer customer = _context.Customers.Where(c => c.CustomerId == id).FirstOrDefault();
+            return customer;
+        }
+
+        [HttpPost]
+        public Customer AddNewCustomer(Customer customer)
+        {  _context.Customers.Add(customer);
+           _context.SaveChanges();
+            return customer;
+        }
         [HttpPut]
         public Customer UpdateCustomer(Customer customer)
         {

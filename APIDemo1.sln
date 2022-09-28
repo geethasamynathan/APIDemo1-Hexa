@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDemo1", "APIDemo1\APIDemo1.csproj", "{58D282BE-87C7-45C0-A154-F863B01FE773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIDemo1", "APIDemo1\APIDemo1.csproj", "{58D282BE-87C7-45C0-A154-F863B01FE773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Consumig_WebAPICore", "Demo_Consumig_WebAPICore\Demo_Consumig_WebAPICore.csproj", "{0DC5551B-775C-4B7F-A9D6-7241748266D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{58D282BE-87C7-45C0-A154-F863B01FE773}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58D282BE-87C7-45C0-A154-F863B01FE773}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58D282BE-87C7-45C0-A154-F863B01FE773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC5551B-775C-4B7F-A9D6-7241748266D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC5551B-775C-4B7F-A9D6-7241748266D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC5551B-775C-4B7F-A9D6-7241748266D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC5551B-775C-4B7F-A9D6-7241748266D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
